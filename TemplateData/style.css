@@ -229,10 +229,23 @@ body {
   border-radius: 18px;
 }
 
+.unity-mobile .game-frame {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+
+.unity-mobile .game-frame::before {
+  display: none;
+}
+
 .unity-mobile #unity-canvas {
   width: 100%;
   height: 100%;
   border-radius: 0;
+  filter: none;
 }
 
 /* ===== Loading Screen ===== */
